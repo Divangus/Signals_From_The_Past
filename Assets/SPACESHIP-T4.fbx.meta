@@ -3,7 +3,452 @@ guid: 356a08ed770f2d347bfb35f4045967fc
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: 6e1911b235ee08475d2cc791439a51d0bac87a6b
+    second: {fileID: 2800000, guid: 7a56dccfeaa4c9247bbf7987d0d870b9, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: CargoClosetLong_BaseColor
+    second: {fileID: 2800000, guid: 8d12ff4dd0209174288a5c4ffc753613, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: CargoClosetLong_Metallic
+    second: {fileID: 2800000, guid: a398f7ebd070c11489fd22e9bde880a0, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: CargoClosetLong_Normal
+    second: {fileID: 2800000, guid: 46457095710987e41b5a9e221b8a1c21, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: CargoClosetLong_Roughness
+    second: {fileID: 2800000, guid: 5e06b63f2173de04aa8fab63b863e5a8, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ChairBase_BaseColor
+    second: {fileID: 2800000, guid: 91982fb1728f8b047a1521e0bbd5e1b3, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ChairBase_Metallic
+    second: {fileID: 2800000, guid: 4791b7ea897aed4428946230c66c3ba0, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ChairBase_Normal
+    second: {fileID: 2800000, guid: b3dea1c46643c5d4bb51d012350163f2, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ChairBase_Roughness
+    second: {fileID: 2800000, guid: 17ece472ced0b16469ed8897db1f676b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ChairExtras_BaseColor
+    second: {fileID: 2800000, guid: 05ac74023a356ff459ee86fddbbdef32, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ChairExtras_Metallic
+    second: {fileID: 2800000, guid: 274832febe373d247aeae2951d27a17c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ChairExtras_Normal
+    second: {fileID: 2800000, guid: 5bb9f8a1cb7f6004a95ce47d09c4a0cd, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ChairExtras_Roughness
+    second: {fileID: 2800000, guid: b2b6564a182042e45947855f62ec5c0a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ChairMain2_BaseColor
+    second: {fileID: 2800000, guid: dd28be5b5a76a494f8a93b1234953258, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ChairMain2_Metallic
+    second: {fileID: 2800000, guid: b611adade0e6fea4ebe965c3453bf374, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ChairMain2_Normal
+    second: {fileID: 2800000, guid: 2397707a210392947a274c6ea1aa25f5, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ChairMain2_Roughness
+    second: {fileID: 2800000, guid: f1d685c599d0de1419ff4b28653cbcb5, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ChairMain_BaseColor
+    second: {fileID: 2800000, guid: a3614139dc4d60c4183e59aa3d872b42, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ChairMain_Metallic
+    second: {fileID: 2800000, guid: 3708a5c9f84cd054e98f136829bf719d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ChairMain_Normal
+    second: {fileID: 2800000, guid: 2920c764fc9f27c44b86118ad3166b37, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ChairMain_Roughness
+    second: {fileID: 2800000, guid: 39a1b93d9bc0ae347b567e4ccbef2dee, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: CharDisplays_BaseColor
+    second: {fileID: 2800000, guid: 94414256e9d8e4e47931950968660d56, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: CharDisplays_Emission
+    second: {fileID: 2800000, guid: 8d25eff11510fab4e94f504784314612, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: CharDisplays_Metallic
+    second: {fileID: 2800000, guid: 625296f71362a304cbf4e21f437c7b07, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: CharDisplays_Normal
+    second: {fileID: 2800000, guid: 82a46e44ee233824eb5428d4335c64ec, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: CharDisplays_Roughness
+    second: {fileID: 2800000, guid: 531de75f480abf34593f3da0ec26901c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: CockpitMainBody_BaseColor
+    second: {fileID: 2800000, guid: 847377c401cec1e429582df3a1355123, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: CockpitMainBody_Metallic
+    second: {fileID: 2800000, guid: 624cafad83dc8834f9b7a00aff37dc7e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: CockpitMainBody_Normal
+    second: {fileID: 2800000, guid: 8068a6fd6d0db2746a563bdf1d0398a5, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: CockpitMainBody_Roughness
+    second: {fileID: 2800000, guid: 9b7128cf7c4d1364cb0702dce6d7ca28, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: CockpitMoreExtras_BaseColor
+    second: {fileID: 2800000, guid: 1972d1f09b2aa3448a4f8f29da0a2f4a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: CockpitMoreExtras_Metallic
+    second: {fileID: 2800000, guid: 3f269ad8386159345881ac8defd2d18d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: CockpitMoreExtras_Normal
+    second: {fileID: 2800000, guid: db47ba2b8b6e86b46924ad7544eb864d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: CockpitMoreExtras_Roughness
+    second: {fileID: 2800000, guid: 36ab09f1c38703c4b9d3cbd11296c5a2, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: CockpitPanels_BaseColor
+    second: {fileID: 2800000, guid: 1465e55827cef494db73cc9a6939fd4d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: CockpitPanels_Metallic
+    second: {fileID: 2800000, guid: 59b85de5b34d2324597f20fe1bbcf1a0, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: CockpitPanels_Normal
+    second: {fileID: 2800000, guid: fa330faf07a0dd247b19ce510f83679b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: CockpitPanels_Roughness
+    second: {fileID: 2800000, guid: 9f8ae22773d755f47b2fff2f021d6e64, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: CockpitScreens
+    second: {fileID: 2800000, guid: be9cb926572d23a4ebd0468bcdea60ad, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: CockpitSecondaryPanels_BaseColor
+    second: {fileID: 2800000, guid: 4c4e240bba84bad4681867b149575246, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: CockpitSecondaryPanels_Metallic
+    second: {fileID: 2800000, guid: 8cf19d1554f371b41afc0033eeda6ef5, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: CockpitSecondaryPanels_Normal
+    second: {fileID: 2800000, guid: 2450c32e185405d4886f30529d2ae856, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: CockpitSecondaryPanels_Roughness
+    second: {fileID: 2800000, guid: 640547649d15c7a4884f582107b33547, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: PostersTex
+    second: {fileID: 2800000, guid: 88811fe8ca7bd764188e1460ae264457, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ServerDisplay1_BaseColor
+    second: {fileID: 2800000, guid: 6da24e207755b374698d30fb56613538, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ServerDisplay1_Emission
+    second: {fileID: 2800000, guid: 44ea7da5402507044a06bc26543606f7, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ServerDisplay1_Metallic
+    second: {fileID: 2800000, guid: 7c72f61b9cc62584d977f5b8971c4443, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ServerDisplay1_Normal
+    second: {fileID: 2800000, guid: 4abe8de0c4ba9f34ab80534a40d5e376, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ServerDisplay1_Roughness
+    second: {fileID: 2800000, guid: da37e429744bc81439654970eb31d2c9, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ServerDisplay2_BaseColor
+    second: {fileID: 2800000, guid: 82ca8360e4784694fb530286be956823, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ServerDisplay2_Emission
+    second: {fileID: 2800000, guid: 793456576c6c3ad4ab3575e08f35822c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ServerDisplay2_Metallic
+    second: {fileID: 2800000, guid: 27e53410d48919747819df5ff63950e2, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ServerDisplay2_Normal
+    second: {fileID: 2800000, guid: 9bc1a7a9dbe441247bb6cb7c59372160, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ServerDisplay2_Roughness
+    second: {fileID: 2800000, guid: b61dc73ca6a628a459198516cd0cc98d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ServerFrame_BaseColor
+    second: {fileID: 2800000, guid: 6221707dfd1a6334c88628963b45ce9b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ServerFrame_Metallic
+    second: {fileID: 2800000, guid: fcef5f30725ee5942bf8638f0a890646, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ServerFrame_Normal
+    second: {fileID: 2800000, guid: 1e36baf88d2de7f478104ffacde42066, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ServerFrame_Roughness
+    second: {fileID: 2800000, guid: 9d38517e28d5dc54ca81d16dfb63444b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ServerPanel1_BaseColor
+    second: {fileID: 2800000, guid: c9c586c9266cfe1409352e02003372cd, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ServerPanel1_Metallic
+    second: {fileID: 2800000, guid: 268f616c326303b4584952444db214ae, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ServerPanel1_Normal
+    second: {fileID: 2800000, guid: cf193ae85f28ec748aff57b7cc3bdfce, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ServerPanel1_Roughness
+    second: {fileID: 2800000, guid: ccf56f6699003504a8f5aed7e1fad44c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ServerPanel2_BaseColor
+    second: {fileID: 2800000, guid: 692ee91c7bc3d96468c65b8775130b90, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ServerPanel2_Metallic
+    second: {fileID: 2800000, guid: 8dd893ef860c2c2478698d42f7772ff2, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ServerPanel2_Normal
+    second: {fileID: 2800000, guid: bd80fee39bb24034383201094f120d3c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ServerPanel2_Roughness
+    second: {fileID: 2800000, guid: 39ef666f422d28443be993bc8ae3198d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ServerPanel3_BaseColor
+    second: {fileID: 2800000, guid: 9ddd3d1e3ff73e4479cbb60bb3de69cb, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ServerPanel3_Emission
+    second: {fileID: 2800000, guid: c6f10f48b366346488cf430e625692ca, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ServerPanel3_Metallic
+    second: {fileID: 2800000, guid: fc3ba1712fbb77844ab198f7270982f6, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ServerPanel3_Normal
+    second: {fileID: 2800000, guid: c0a433a089e4aa949a772999f9573ec4, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ServerPanel3_Roughness
+    second: {fileID: 2800000, guid: facc28d02016a44469543a5deea704cb, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ServerPanelEnd_BaseColor
+    second: {fileID: 2800000, guid: b1ffbf51ef9f34a4e9a454b13832abf4, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ServerPanelEnd_Metallic
+    second: {fileID: 2800000, guid: b4c530cd3ddaee34d9f4d550dfd86d6b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ServerPanelEnd_Normal
+    second: {fileID: 2800000, guid: c6c881f5975872745a8879f85f798df2, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ServerPanelEnd_Roughness
+    second: {fileID: 2800000, guid: 178259a1c7fe54045aa21b35f8534e28, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: WhiteMetal_diffuse
+    second: {fileID: 2800000, guid: 317c929953f22bb468611b82150bbc28, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: WhiteMetal_diffuse000
+    second: {fileID: 2800000, guid: 54155df87b9a4dd4b922afc89db9bc8a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: WhiteMetal_normal
+    second: {fileID: 2800000, guid: 7b9f963028a31614fa0fbd12369e2885, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: WhiteMetal_normal000
+    second: {fileID: 2800000, guid: e1bafe0e363257f4c84958519f6d03e8, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: WhiteMetal_roughness
+    second: {fileID: 2800000, guid: a1edaebc8713cf94c9abafbdd4ee8355, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: WhiteMetal_roughness000
+    second: {fileID: 2800000, guid: 555ba83ff9ffcc044b597d3cfb30bd32, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: gauge-7817208_640
+    second: {fileID: 2800000, guid: 939a7ac7e5f5c6f4db92845d1a4d3f0f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: hologram projectors_BaseColor
+    second: {fileID: 2800000, guid: a96e72ca19a09f64098758559682967c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: hologram projectors_Emission
+    second: {fileID: 2800000, guid: 6d9b24f6fac1def46b9589cfcbaea8ff, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: hologram projectors_Metallic
+    second: {fileID: 2800000, guid: 150d564660482e8488d09ce823885539, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: hologram projectors_Normal
+    second: {fileID: 2800000, guid: a26a04d750da7f744a99d5d8869d86ef, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: hologram projectors_Roughness
+    second: {fileID: 2800000, guid: 15d2861285b3d07438a4dfbd4353b29b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: spaceship_cockpit_hud_by_thezeis_d3261il-fullview
+    second: {fileID: 2800000, guid: 532563f696eadc5498376810ef4894f5, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: speedometer-34134_640
+    second: {fileID: 2800000, guid: 43367c40cc70ca442ac976809ef18817, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0

@@ -3,7 +3,62 @@ guid: a139b24979a521b46bb1dc96c791fee1
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: DefaultMaterial_BaseColor
+    second: {fileID: 2800000, guid: f184b594d88943549a00ac8229a57768, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: DefaultMaterial_Metallic
+    second: {fileID: 2800000, guid: 96a14e1b097bb3448a52a466530fc75d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: DefaultMaterial_Normal
+    second: {fileID: 2800000, guid: 8035beb560be0dc43b5048908c8ca4ac, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: DefaultMaterial_Roughness
+    second: {fileID: 2800000, guid: 26d0e630d82dc6e4b85a527876d3c9ae, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: GWC Cast Iron Blanched with rust_Metallic
+    second: {fileID: 2800000, guid: 6737e477f11fc4d45a60d6ba1fa6204f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: GWC Cast Iron Blanched with rust_Normal
+    second: {fileID: 2800000, guid: c3149dc37d251e545a4be47b707be660, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: GWC Red Paint Worn Hi_metallic
+    second: {fileID: 2800000, guid: 220e98c3f8c16994d9bb654c31e7e37a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Rubber 01_diffuse
+    second: {fileID: 2800000, guid: 76a7696d1fa1d3c47a3737d9548c5c7a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Scratches002_2K_NormalGL
+    second: {fileID: 2800000, guid: f2045ffdd79cf49469c1f102f0784be9, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Scratches002_2K_var1
+    second: {fileID: 2800000, guid: 1da5c38bfadba1145bb68b54692a4673, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: tiled_plane_DefaultMaterial_Normal
+    second: {fileID: 2800000, guid: 5f550521aee80ee4aa5e9f752ab26e76, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0

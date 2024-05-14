@@ -3,7 +3,367 @@ guid: 242a05da6f2d0db41be19530a20aef55
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: 01___Default_baseColor
+    second: {fileID: 2800000, guid: d9e64f1630c21bf4fbcd07487f73eaa7, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: 01___Default_normal
+    second: {fileID: 2800000, guid: 2ea02b26e0fbfae46ace4ae023d64353, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: M_bubkeship_screens_BaseColor
+    second: {fileID: 2800000, guid: 86dbe39b4b399e342b8c1eb64ed19960, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: M_bubkeship_screens_Emission
+    second: {fileID: 2800000, guid: c3c4ba28ca1250b4fbff5097591ca17f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: M_bubkeship_screens_Metallic
+    second: {fileID: 2800000, guid: 0f43da6390fa1d14fbc85068649e2ff3, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: M_bubkeship_screens_Normal
+    second: {fileID: 2800000, guid: cb958a9780af90e48aee036be81788b5, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: M_bubkeship_screens_Roughness
+    second: {fileID: 2800000, guid: b712e3079bd99ed49a8c405bf3045a35, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: M_bubleship_bottomhull_BaseColor
+    second: {fileID: 2800000, guid: 801cf5e2e0a7e7146a83edcff20c9ace, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: M_bubleship_bottomhull_Metallic
+    second: {fileID: 2800000, guid: 8b4de338769b7994aabb419c55dda3fd, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: M_bubleship_bottomhull_Normal
+    second: {fileID: 2800000, guid: b42f31a668fd0dc4695bf80225dd2098, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: M_bubleship_bottomhull_Roughness
+    second: {fileID: 2800000, guid: c7c9189ef5a4c09418035877249a5b31, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: M_bubleship_cockpitpanels_BaseColor
+    second: {fileID: 2800000, guid: bb6a358cf9ebd0743ab16832c7a49bc3, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: M_bubleship_cockpitpanels_Metallic
+    second: {fileID: 2800000, guid: a4d6ae51022deb741bdee7d8865e72a0, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: M_bubleship_cockpitpanels_Normal
+    second: {fileID: 2800000, guid: 7b6f1b655eac67342b7f8539d86cb187, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: M_bubleship_cockpitpanels_Roughness
+    second: {fileID: 2800000, guid: 82359062579ff7148b9ae4e895cc285e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: M_bubleship_details_BaseColor
+    second: {fileID: 2800000, guid: fd88fede83467e545aaf0f63c2f53280, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: M_bubleship_details_Metallic
+    second: {fileID: 2800000, guid: 141526dfd62ae1f49bab299ca2557142, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: M_bubleship_details_Normal
+    second: {fileID: 2800000, guid: fefd184c1df3d1542a4bfa7b263453af, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: M_bubleship_details_Roughness
+    second: {fileID: 2800000, guid: 08df653396bbf41468b1b1ff05b742e9, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: M_bubleship_engines_BaseColor
+    second: {fileID: 2800000, guid: 8c51bdea0c5dbe647b1620dc35495e04, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: M_bubleship_engines_Metallic
+    second: {fileID: 2800000, guid: e1e10249bc6454142a69ca7e5b121ea4, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: M_bubleship_engines_Normal
+    second: {fileID: 2800000, guid: 25d496a560156074bbdb214e10c352dc, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: M_bubleship_engines_Roughness
+    second: {fileID: 2800000, guid: 0333e0b1226fee34a9208c08157346b4, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: M_bubleship_mainhull2_BaseColor
+    second: {fileID: 2800000, guid: 6352622d9d6f2af43ba6ba0c85da0c65, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: M_bubleship_mainhull2_Metallic
+    second: {fileID: 2800000, guid: b767ff52dcc4e8844b11e08b47d61768, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: M_bubleship_mainhull2_Normal
+    second: {fileID: 2800000, guid: 8417156af3079f04eb2a69450528734b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: M_bubleship_mainhull2_Roughness
+    second: {fileID: 2800000, guid: 8a1e63e633dc5084387b1851fdac9797, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: M_bubleship_mainhull3_BaseColor
+    second: {fileID: 2800000, guid: d9de378cd374c17449d61e76fdddfc4c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: M_bubleship_mainhull3_Metallic
+    second: {fileID: 2800000, guid: 78babd8440cd56d40b7ceb9893739033, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: M_bubleship_mainhull3_Normal
+    second: {fileID: 2800000, guid: cc05ff30d0f029a4e97ba13f23d9c1df, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: M_bubleship_mainhull3_Roughness
+    second: {fileID: 2800000, guid: 44961317e3916f3418ebaac056555c48, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: M_bubleship_mainhull4_BaseColor
+    second: {fileID: 2800000, guid: 2caefaf8e843ac845b35ca8d03825e9a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: M_bubleship_mainhull4_Metallic
+    second: {fileID: 2800000, guid: a08ed3e4994e23349a58999297cc3d9c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: M_bubleship_mainhull4_Normal
+    second: {fileID: 2800000, guid: f2d03c91b4339a54d8b03b73ff577be6, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: M_bubleship_mainhull4_Roughness
+    second: {fileID: 2800000, guid: 705f535fad52f304ea4459ac860243fc, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: M_bubleship_mainhull5_BaseColor
+    second: {fileID: 2800000, guid: 8bbc1e72dc0727245ba259286ad506b5, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: M_bubleship_mainhull5_Metallic
+    second: {fileID: 2800000, guid: d8f2e7bb13bc59d4d8241a2cefa86c39, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: M_bubleship_mainhull5_Normal
+    second: {fileID: 2800000, guid: 1f984c9f50a23854e900e6bd56f569f2, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: M_bubleship_mainhull5_Roughness
+    second: {fileID: 2800000, guid: fa6cb617ab8ffc249b0c7511ac0f1852, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: M_bubleship_mainhull_BaseColor
+    second: {fileID: 2800000, guid: 7a447dcaa1f48794da627358dea69f46, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: M_bubleship_mainhull_Metallic
+    second: {fileID: 2800000, guid: db6698fcae6221f48b869c4b7f4868dc, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: M_bubleship_mainhull_Normal
+    second: {fileID: 2800000, guid: 61a7d86e2251af9418f12bcc8436f7c8, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: M_bubleship_mainhull_Roughness
+    second: {fileID: 2800000, guid: fc8e73e4379654b40a4d59cf5edbf083, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: M_bubleship_mainhullhidden_BaseColor
+    second: {fileID: 2800000, guid: 91e9c05915a17db4eb0fea156db5e635, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: M_bubleship_misc_BaseColor
+    second: {fileID: 2800000, guid: e656ec0851a49944cad5e879d25a52f7, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: M_bubleship_misc_Metallic
+    second: {fileID: 2800000, guid: 452ab017655e1614bbb80b13b66859e5, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: M_bubleship_misc_Normal
+    second: {fileID: 2800000, guid: 28f3adb40d8734b49b256d24735c1ead, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: M_bubleship_misc_Roughness
+    second: {fileID: 2800000, guid: 22da5edb53a6478498b6b4a118cd9fd7, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: M_bubleship_reardoor_BaseColor
+    second: {fileID: 2800000, guid: e9e18924b61d04a4b91c64f21ee0fe46, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: M_bubleship_reardoor_Metallic
+    second: {fileID: 2800000, guid: 821747b1aa8bb7246a267a4c0cf59d83, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: M_bubleship_reardoor_Normal
+    second: {fileID: 2800000, guid: e2f583fece2dddd4ba32144682b909fe, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: M_bubleship_reardoor_Roughness
+    second: {fileID: 2800000, guid: 38d3c5ec3b086184a9a1a10df16e48c8, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: M_bubleship_rearpanel_BaseColor
+    second: {fileID: 2800000, guid: bd0800a6b8bd7cc43a086176abff425f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: M_bubleship_rearpanel_Metallic
+    second: {fileID: 2800000, guid: 35bacb5559f3fae4a8cc1da358c5e9d8, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: M_bubleship_rearpanel_Normal
+    second: {fileID: 2800000, guid: e2f203d2ca4cd304eb9282bb3631aabd, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: M_bubleship_rearpanel_Roughness
+    second: {fileID: 2800000, guid: f80f3e901cfe7764c8b8667f7902b3be, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: M_bubleship_sidepanels_BaseColor
+    second: {fileID: 2800000, guid: 6029e3b6a33c4704caebbb7b18b44690, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: M_bubleship_sidepanels_Metallic
+    second: {fileID: 2800000, guid: 0e2129b8ed61de24cb4115300a1dbc49, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: M_bubleship_sidepanels_Normal
+    second: {fileID: 2800000, guid: 36b247f1f5856b8429dd1a40444f4bec, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: M_bubleship_sidepanels_Roughness
+    second: {fileID: 2800000, guid: 7c5ac3d0727c9b947aa9a78f35af285f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: M_bubleship_tophullcenter.001_BaseColor
+    second: {fileID: 2800000, guid: 8111cb05397725a42ab7f7e2ee58e377, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: M_bubleship_tophullcenter.001_Metallic
+    second: {fileID: 2800000, guid: a6d20fdbd3b6e4048bfe34d35cd87f59, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: M_bubleship_tophullcenter.001_Normal
+    second: {fileID: 2800000, guid: 0f136e4d13cab1b4fbe266e3ebc54d0d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: M_bubleship_tophullcenter.001_Roughness
+    second: {fileID: 2800000, guid: 7d87bb178d0b4bf48b317b68f04ce1f2, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: M_bubleship_tophullcenter_BaseColor
+    second: {fileID: 2800000, guid: 5c5a2bb16f51bab49b0612f833f3cf68, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: M_bubleship_tophullcenter_Metallic
+    second: {fileID: 2800000, guid: 2ce52d1679e815046a4d325bc90857a4, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: M_bubleship_tophullcenter_Normal
+    second: {fileID: 2800000, guid: 34d92e22e0c5dfb489edbbdb97e7e327, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: M_bubleship_tophullcenter_Roughness
+    second: {fileID: 2800000, guid: df8b6ec638005ec488574b85b77ecbd8, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: M_bubleship_tophullrear_BaseColor
+    second: {fileID: 2800000, guid: 57dd86955a5976e48b251a1e9ecfe7db, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: M_bubleship_tophullrear_Metallic
+    second: {fileID: 2800000, guid: 042770a030cce994297af5777db41c2c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: M_bubleship_tophullrear_Normal
+    second: {fileID: 2800000, guid: e2bb9b3a55031974496ced62ae7903d9, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: M_bubleship_tophullrear_Roughness
+    second: {fileID: 2800000, guid: 38024c848558e3e42829dd45e1b77be3, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0

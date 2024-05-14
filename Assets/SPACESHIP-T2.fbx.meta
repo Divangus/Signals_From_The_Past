@@ -3,7 +3,152 @@ guid: 8a1685688739ef144b81d2b414069ba5
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: 01___Default_baseColor
+    second: {fileID: 2800000, guid: fabea58a5fdfe214c81f47ba46ee18d0, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: 01___Default_normal
+    second: {fileID: 2800000, guid: d03e8961f6c04f344a4cc94004f44ae4, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: DefaultMaterial_BaseColor
+    second: {fileID: 2800000, guid: 28fd52daa6f353c43963d7182c7a4f44, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: DefaultMaterial_Metallic
+    second: {fileID: 2800000, guid: e0a1aefd5425c074b881259122ac23f9, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: DefaultMaterial_Roughness
+    second: {fileID: 2800000, guid: 5b84f915c73d0db40a4678792fc9031d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: JS-Wyre-2022-08-29-21-25-16
+    second: {fileID: 2800000, guid: 4bf4a5085003ec14b8320b68ea89592d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: JS-Wyre-2022-08-29-21-25-16-Color
+    second: {fileID: 2800000, guid: 1fa8bf4dbc5b83647a005af416b182d1, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Kursun_Metallic
+    second: {fileID: 2800000, guid: a3d6e40575c83b34dac4250982496c62, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Kursun_Normal
+    second: {fileID: 2800000, guid: d6611e1bf94f88c42b37d6fe61392bde, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Kursun_Roughness
+    second: {fileID: 2800000, guid: 11e7ce2b98e030c45878057e1e0c5edf, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Leather001_2K_Color
+    second: {fileID: 2800000, guid: 066c7d8c6558d0a44b1366cdb2275942, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Metal010_2K_Color
+    second: {fileID: 2800000, guid: a4ca652d61b8d884186398b9e4adc676, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Metal010_2K_Color000
+    second: {fileID: 2800000, guid: 13112e30fd2df7d4984e20cc87ef6ebb, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Paper004_2K_Color
+    second: {fileID: 2800000, guid: e2d97b5e13fcc6647a1480dfbfb1bff7, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Paper004_2K_Roughness
+    second: {fileID: 2800000, guid: 64ba53523d602f946ae16ecf483a2613, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Sticker #1
+    second: {fileID: 2800000, guid: 995fc3bdeaf13f8478d05868f382769d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Sticker #2
+    second: {fileID: 2800000, guid: e4fdf53c0972d024b855fb48727ca830, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Sticker #3
+    second: {fileID: 2800000, guid: 72c6d728bafe97a49ae0c266ae8e277b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Untitled
+    second: {fileID: 2800000, guid: 8bce489b089e3754eb98dd9c816fd5e1, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Untitled.006
+    second: {fileID: 2800000, guid: 218572b80b154854f93f374ae9442fd5, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Untitled.008
+    second: {fileID: 2800000, guid: 0530cfdabf891c84b98a20ea3a25d2e7, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Untitled.010
+    second: {fileID: 2800000, guid: 5b320ce8704b50f4492f3cb87ca86511, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Yt7NL_COLOR
+    second: {fileID: 2800000, guid: 2f35d308e14a0de4587608f8c2c5a17a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Yt7NL_NRM
+    second: {fileID: 2800000, guid: 80f0e8694a4a06c4eba8c33734e3fc4f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Yt7NL_SPEC
+    second: {fileID: 2800000, guid: a2270af55d00442418b707eb7d7557a5, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: book (2)
+    second: {fileID: 2800000, guid: 508fd07383fe3b943ba979070ed06819, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: pocket2_BaseColor
+    second: {fileID: 2800000, guid: 0aeeabed3f5284d49b3d6d75946c2f27, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: pocket2_Metallic
+    second: {fileID: 2800000, guid: f68e54a4aa5a36c409eda715d51fb076, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: pocket2_Roughness
+    second: {fileID: 2800000, guid: 0a732995c2326e34bac8c2e6f5530116, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0
