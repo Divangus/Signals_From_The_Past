@@ -5,6 +5,7 @@ using UnityEngine;
 interface IInteractable
 {
     public void Interact();
+    public void Hover();
 }
 
 public class Interaction : MonoBehaviour
@@ -21,12 +22,14 @@ public class Interaction : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.E))
+        Ray r = new Ray(InteractorSource.position, InteractorSource.forward);
+        if (Physics.Raycast(r, out RaycastHit hitInfo, InteractRange))
         {
-            Ray r = new Ray(InteractorSource.position, InteractorSource.forward);
-            if(Physics.Raycast(r, out RaycastHit hitInfo, InteractRange))
+            if (hitInfo.collider.gameObject.TryGetComponent(out IInteractable interactObj))
             {
-                if(hitInfo.collider.gameObject.TryGetComponent(out IInteractable interactObj))
+                interactObj.Hover();
+
+                if (Input.GetKeyDown(KeyCode.E))
                 {
                     interactObj.Interact();
                 }
