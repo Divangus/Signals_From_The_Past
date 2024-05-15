@@ -26,7 +26,7 @@ public class DialogueManager : MonoBehaviour
             //if (time > 50.0f) ;
             else
             {
-                Debug.Log(time);
+                //Debug.Log(time);
                 time += Time.deltaTime;
             }
         }

@@ -1,16 +1,22 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class proba : MonoBehaviour, IInteractable
 {
+    public Text textTuto;
    public void Interact()
     {
-        Debug.Log(Random.Range(0, 100));
+        
     }
 
     public void Hover()
     {
+        if (!Interaction.isExamining)
+        {
+            textTuto.enabled = true;
+        }
         gameObject.GetComponent<Outline>().enabled = true;
         gameObject.GetComponent<Outline>().OutlineMode = Outline.Mode.OutlineVisible;
         gameObject.GetComponent<Outline>().OutlineColor = Color.yellow;
@@ -20,5 +26,6 @@ public class proba : MonoBehaviour, IInteractable
     void Update()
     {
         gameObject.GetComponent<Outline>().enabled = false;
+        textTuto.enabled = false;
     }
 }
