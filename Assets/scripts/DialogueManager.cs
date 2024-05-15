@@ -27,12 +27,12 @@ public class DialogueManager : MonoBehaviour
             if (time > 51.0f && time < 51.1f)
             {
                 audios.Play();
-                Debug.Log("RINGGGGGGGGGGGGGGGGGGGGGGGGGGG");
+                //Debug.Log("RINGGGGGGGGGGGGGGGGGGGGGGGGGGG");
                 time += Time.deltaTime;
             }
             else
             {
-                Debug.Log(time);
+                //Debug.Log(time);
                 time += Time.deltaTime;
             }
         }
