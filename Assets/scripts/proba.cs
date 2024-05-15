@@ -6,9 +6,10 @@ using UnityEngine.UI;
 public class proba : MonoBehaviour, IInteractable
 {
     public Text textTuto;
-   public void Interact()
+   public void NoHover()
     {
-        
+        gameObject.GetComponent<Outline>().enabled = false;
+        textTuto.enabled = false;
     }
 
     public void Hover()
@@ -25,7 +26,6 @@ public class proba : MonoBehaviour, IInteractable
 
     void Update()
     {
-        gameObject.GetComponent<Outline>().enabled = false;
-        textTuto.enabled = false;
+        
     }
 }

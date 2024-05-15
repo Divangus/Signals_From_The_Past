@@ -7,12 +7,13 @@ using Cursor = UnityEngine.Cursor;
 
 interface IInteractable
 {
-    public void Interact();
+    public void NoHover();
     public void Hover();
 }
 
 public class Interaction : MonoBehaviour
 {
+    private GameObject objectPreviouslyHit;
     public static bool InputLock = false;
     public Transform InteractorSource;
     public float InteractRange;
@@ -30,6 +31,8 @@ public class Interaction : MonoBehaviour
     private Dictionary<Transform, Vector3> originalPositions = new Dictionary<Transform, Vector3>();
     private Dictionary<Transform, Quaternion> originalRotations = new Dictionary<Transform, Quaternion>();
 
+    RaycastHit hitInfo;
+
 
     // Start is called before the first frame update
     void Start()
@@ -40,9 +43,22 @@ public class Interaction : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Ray r = new Ray(InteractorSource.position, InteractorSource.forward);
-        if (Physics.Raycast(r, out RaycastHit hitInfo, InteractRange))
+        if (objectPreviouslyHit != null)
         {
+            if(objectPreviouslyHit.TryGetComponent(out IInteractable interactObj))
+            {
+                interactObj.NoHover();
+            }
+        }
+        Ray r = new Ray(InteractorSource.position, InteractorSource.forward);
+
+        if (Physics.Raycast(r, out hitInfo, InteractRange))
+        {
+            if (objectPreviouslyHit != hitInfo.collider.gameObject || objectPreviouslyHit == null)
+            {
+                objectPreviouslyHit = hitInfo.collider.gameObject;
+            }
+
             if (hitInfo.collider.gameObject.TryGetComponent(out IInteractable interactObj))
             {
                 interactObj.Hover();
@@ -60,6 +76,7 @@ public class Interaction : MonoBehaviour
 
                 }
             }
+
         }
 
         if (isExamining)
