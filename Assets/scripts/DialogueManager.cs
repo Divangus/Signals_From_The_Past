@@ -7,12 +7,11 @@ public class DialogueManager : MonoBehaviour
 {
     public NPCConversation cConversation;
     private bool timerCall = true;
-    private float time = 0.0f; 
+    private float time = 0.0f;
+    public AudioClip[] audioClips;
+    public AudioSource audios;
     // Start is called before the first frame update
-    void Start()
-    {
- 
-    }
+
     private void Update()
     {
         if (timerCall)
@@ -20,13 +19,20 @@ public class DialogueManager : MonoBehaviour
             if (time > 60.0f)
             {
                 ConversationManager.Instance.StartConversation(cConversation);
+                audios.clip = audioClips[0];
+                audios.Play();
                 time = 0;
                 timerCall = false;
             }
-            //if (time > 50.0f) ;
+            if (time > 51.0f && time < 51.1f)
+            {
+                audios.Play();
+                Debug.Log("RINGGGGGGGGGGGGGGGGGGGGGGGGGGG");
+                time += Time.deltaTime;
+            }
             else
             {
-                //Debug.Log(time);
+                Debug.Log(time);
                 time += Time.deltaTime;
             }
         }
