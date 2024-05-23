@@ -455,6 +455,11 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
+--- !u!1 &210363647 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1773623360729482, guid: 11aaea5348574644a9eb4f4504fcce3f, type: 3}
+  m_PrefabInstance: {fileID: 2124613976}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &249172835 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -4507150113119084024, guid: 242a05da6f2d0db41be19530a20aef55, type: 3}
@@ -3849,8 +3854,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37330e7d46d85b640be2b883226d1901, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 210363647}
   InteractorSource: {fileID: 1808705869}
   InteractRange: 5
+  rotationSensitivity: 2
   offset: {fileID: 2054961035}
 --- !u!1 &1838911635 stripped
 GameObject:
@@ -4484,7 +4491,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2054961035}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.558}
+  m_LocalPosition: {x: 0, y: 0, z: 0.515}
   m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4702,7 +4709,15 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 23087463268523072, guid: 11aaea5348574644a9eb4f4504fcce3f, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 81448068208000304, guid: 11aaea5348574644a9eb4f4504fcce3f, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 136877096903737240, guid: 11aaea5348574644a9eb4f4504fcce3f, type: 3}
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
