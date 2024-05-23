@@ -13,15 +13,20 @@ interface IInteractable
 
 public class Interaction : MonoBehaviour
 {
+    public GameObject player;
     private GameObject objectPreviouslyHit;
     public static bool InputLock = false;
     public Transform InteractorSource;
     public float InteractRange;
 
+    public float rotationSensitivity = 2.0f;
+
     //ofsset for the examine system
     public GameObject offset;
 
     public static bool isExamining = false;
+
+    bool canDrop = true;
 
     private Vector3 lastMousePosition;
 
@@ -82,6 +87,8 @@ public class Interaction : MonoBehaviour
         if (isExamining)
         {
             Examine(); StartExamination();
+            //if (Input.GetKeyDown(KeyCode.E)) { ToggleExamination(); }
+
         }
         else
         {
@@ -100,15 +107,15 @@ public class Interaction : MonoBehaviour
     {
 
         lastMousePosition = Input.mousePosition;
-        Cursor.lockState = CursorLockMode.None;
-        Cursor.visible = true;
+        //Cursor.lockState = CursorLockMode.None;
+        //Cursor.visible = true;
         InputLock = true;
     }
 
     void StopExamination()
     {
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
+        //Cursor.lockState = CursorLockMode.Locked;
+        //Cursor.visible = false;
         InputLock = false;
     }
 
@@ -118,10 +125,10 @@ public class Interaction : MonoBehaviour
         {
             examinedObject.position = Vector3.Lerp(examinedObject.position, offset.transform.position, 0.2f);
 
-            Vector3 deltaMouse = Input.mousePosition - lastMousePosition;
-            float rotationSpeed = 1.0f;
-            examinedObject.Rotate(deltaMouse.x * rotationSpeed * Vector3.up, Space.World);
-            examinedObject.Rotate(deltaMouse.y * rotationSpeed * Vector3.left, Space.World);
+            //make sure object doesnt collide with player, it can cause weird bugs
+            Physics.IgnoreCollision(examinedObject.GetComponent<Collider>(), player.GetComponent<Collider>(), true);
+
+            RotateObject();
             lastMousePosition = Input.mousePosition;
         }
     }
@@ -130,6 +137,9 @@ public class Interaction : MonoBehaviour
     {
         if (examinedObject != null)
         {
+            //re-enable collision with player
+            Physics.IgnoreCollision(examinedObject.GetComponent<Collider>(), player.GetComponent<Collider>(), false);
+
             // Reset the position and rotation of the examined object to its original values
             if (originalPositions.ContainsKey(examinedObject))
             {
@@ -139,6 +149,32 @@ public class Interaction : MonoBehaviour
             {
                 examinedObject.rotation = Quaternion.Slerp(examinedObject.rotation, originalRotations[examinedObject], 0.2f);
             }
+        }
+    }
+
+    void RotateObject()
+    {
+        if (Input.GetKey(KeyCode.R))//hold R key to rotate, change this to whatever key you want
+        {
+            canDrop = false; //make sure throwing can't occur during rotating
+
+            //disable player being able to look around
+            //mouseLookScript.verticalSensitivity = 0f;
+            //mouseLookScript.lateralSensitivity = 0f;
+            
+
+            float XaxisRotation = Input.GetAxis("Mouse X") * rotationSensitivity;
+            float YaxisRotation = Input.GetAxis("Mouse Y") * rotationSensitivity;
+            //rotate the object depending on mouse X-Y Axis
+            examinedObject.transform.Rotate(Vector3.down, XaxisRotation);
+            examinedObject.transform.Rotate(Vector3.right, YaxisRotation);
+        }
+        else
+        {
+            //re-enable player being able to look around
+            //mouseLookScript.verticalSensitivity = originalvalue;
+            //mouseLookScript.lateralSensitivity = originalvalue;
+            canDrop = true;
         }
     }
 
