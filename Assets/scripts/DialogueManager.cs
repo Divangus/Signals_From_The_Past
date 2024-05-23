@@ -10,6 +10,8 @@ public class DialogueManager : MonoBehaviour
     private float time = 0.0f;
     public AudioClip[] audioClips;
     public AudioSource audios;
+
+    public static bool conversationEnd = false;
     // Start is called before the first frame update
 
     private void Update()
@@ -50,5 +52,9 @@ public class DialogueManager : MonoBehaviour
         {
             ConversationManager.Instance.PressSelectedOption();
         }
+    }
+    public void EndConversation()
+    {
+        conversationEnd = true; 
     }
 }

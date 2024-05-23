@@ -66,17 +66,37 @@ public class Interaction : MonoBehaviour
 
             if (hitInfo.collider.gameObject.TryGetComponent(out IInteractable interactObj))
             {
-                interactObj.Hover();
-
-                if (Input.GetKeyDown(KeyCode.E)) 
+                if (hitInfo.collider.gameObject.CompareTag("StartIncursion"))
                 {
-                    ToggleExamination();
-
-                    if (isExamining)
+                    if (DialogueManager.conversationEnd)
                     {
-                        examinedObject = hitInfo.transform;
-                        originalPositions[examinedObject] = examinedObject.position;
-                        originalRotations[examinedObject] = examinedObject.rotation;
+                        interactObj.Hover();
+                    }
+                }
+                else
+                {
+                    interactObj.Hover();
+                }
+
+                if (Input.GetKeyDown(KeyCode.E))
+                {
+                    if (hitInfo.collider.gameObject.CompareTag("StartIncursion"))
+                    {
+                        if (DialogueManager.conversationEnd)
+                        {
+                            Debug.Log("DEIVID");
+                        }
+                    }
+                    else
+                    {
+                        ToggleExamination();
+
+                        if (isExamining)
+                        {
+                            examinedObject = hitInfo.transform;
+                            originalPositions[examinedObject] = examinedObject.position;
+                            originalRotations[examinedObject] = examinedObject.rotation;
+                        }
                     }
 
                 }
