@@ -1,0 +1,279 @@
+fileFormatVersion: 2
+guid: 682d559010e5cfe43bd15a2d60fda512
+ModelImporter:
+  serializedVersion: 22200
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: 01___Default_baseColor
+    second: {fileID: 2800000, guid: ac68d4702a43a0b46acce2e455ac611c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: 01___Default_normal
+    second: {fileID: 2800000, guid: 10c8fa58a40321146bb5fccc873c4331, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: CARTA-10
+    second: {fileID: 2800000, guid: 413bf03e3146ae04e9ad535679904618, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: CARTA-11
+    second: {fileID: 2800000, guid: 38e39127d26f88f4baac4281cb7b7c17, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: CARTA-12
+    second: {fileID: 2800000, guid: a0bf429371b492d4fa525be4a383a21d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: CARTA-13
+    second: {fileID: 2800000, guid: eabe470b1865cc6498be7dedb2b0fb36, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: CARTA-14
+    second: {fileID: 2800000, guid: f2cdf95d534639c4384ddd5f56d18bab, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: CARTA-2
+    second: {fileID: 2800000, guid: c901d32287bfbda409c0cbc139fa822e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: CARTA-5
+    second: {fileID: 2800000, guid: fa7a188eab556ee4dadff86df446cd24, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: CARTA-6
+    second: {fileID: 2800000, guid: af159e3193172eb498cf1aee63a04f2f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: CARTA-7
+    second: {fileID: 2800000, guid: 97843f5f0367cdb46a9d1b3c6f867fc4, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: CARTA-8
+    second: {fileID: 2800000, guid: 317bb2c37a902e74c8b812a4fae4c7ea, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: CARTA-9
+    second: {fileID: 2800000, guid: bfe384875eb65bd46808a17bbb9fd337, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Carta-1
+    second: {fileID: 2800000, guid: 5674fed550c8e8549874ef582dd9a168, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Cork_diffuseOriginal
+    second: {fileID: 2800000, guid: ad10438aba3aaa44dbf7f28a40f5be99, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Cork_metallic
+    second: {fileID: 2800000, guid: 61a0f62abd9191645a3852e30f6f0867, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Cork_normal
+    second: {fileID: 2800000, guid: 8c08a4a230b38254499bf2ea415ee075, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Karte_Front
+    second: {fileID: 2800000, guid: b4d170672c880c145b53ba74af3f00f3, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Kursun_Metallic
+    second: {fileID: 2800000, guid: 8e8dce426f62edd4383b3242d582a3f3, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Kursun_Normal
+    second: {fileID: 2800000, guid: 0e79b41304629f74685c0191744bf383, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Kursun_Roughness
+    second: {fileID: 2800000, guid: ddad2d165999dcd4da6d048229c1370f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Leather001_2K_Color
+    second: {fileID: 2800000, guid: fd448e27f8de484458b8f53bcbbd2891, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Metal010_2K_Color
+    second: {fileID: 2800000, guid: 5e094bffa9ebe1a4d842535507251b3f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Metal010_2K_Color000
+    second: {fileID: 2800000, guid: 41e7a94baf7c0ca4a8e389fb4446455b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TARGETA-1
+    second: {fileID: 2800000, guid: 731974d46a5ae954da09c8ed6bcbdc07, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TARGETA-2
+    second: {fileID: 2800000, guid: a4e57da2add5290489edfb95ee08b7f2, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TARGETA-3
+    second: {fileID: 2800000, guid: 9b5f5834b15c38946865da601b0eb6d7, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Untitled.006
+    second: {fileID: 2800000, guid: 4947989e1a46bbe4bb0345126a22df56, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Yt7NL_COLOR
+    second: {fileID: 2800000, guid: d2d8fef0e1539c44a813eaea9b82acfd, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Yt7NL_NRM
+    second: {fileID: 2800000, guid: 8c3cd4c373815674fac1ae00e52da690, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Yt7NL_SPEC
+    second: {fileID: 2800000, guid: 75a458c93fb1dab4f8c216077803486f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: scifi_panel_baseColor
+    second: {fileID: 2800000, guid: e0676f2219f79184dbf62078891211e6, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: scifi_panel_metallic
+    second: {fileID: 2800000, guid: 01fd61a912190a34a8bddd8fa426c32e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: scifi_panel_roughness
+    second: {fileID: 2800000, guid: 0e27d1e65c3116f4997c2dbf080ad5fa, type: 3}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    strictVertexDataChecks: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
