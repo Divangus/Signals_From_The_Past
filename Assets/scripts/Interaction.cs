@@ -6,6 +6,7 @@ using UnityEngine.UI;
 using UnityEditor.SceneManagement;
 using Cursor = UnityEngine.Cursor;
 using UnityEngine.SceneManagement;
+using System;
 
 interface IInteractable
 {
@@ -40,6 +41,7 @@ public class Interaction : MonoBehaviour
 
     RaycastHit hitInfo;
 
+    private bool RedCard,BlueCard,GreenCard = false;
 
     // Start is called before the first frame update
     void Start()
@@ -108,33 +110,76 @@ public class Interaction : MonoBehaviour
             if (hitObject.TryGetComponent(out IInteractable interactObj))
             {
                 HandleInteraction(interactObj, hitObject);
+                CheckCard(interactObj, hitObject);
             }
         }
     }
 
+    private void CheckCard(IInteractable interactObj, GameObject hitObject)
+    {
+
+       
+    }
+
     void HandleInteraction(IInteractable interactObj, GameObject hitObject)
     {
-        if (hitObject.CompareTag("StartIncursion"))
+        string tag = hitObject.tag;
+
+        switch (tag)
         {
-            if (DialogueManager.conversationEnd)
-            {
+            case "RedCard":
                 interactObj.Hover();
                 if (Input.GetKeyDown(KeyCode.E))
                 {
-                    SceneManager.LoadScene("Hangar");
+                    hitObject.gameObject.SetActive(false);
+                    RedCard = true;
                 }
-            }
-        }
-        else
-        {
-            interactObj.Hover();
-            if (Input.GetKeyDown(KeyCode.E))
-            {
-                isExamining = true;
-                examinedObject = hitInfo.transform;
-                originalPositions[examinedObject] = examinedObject.position;
-                originalRotations[examinedObject] = examinedObject.rotation;
-            }
+                break;
+
+            case "BlueCard":
+                interactObj.Hover();
+                if (Input.GetKeyDown(KeyCode.E))
+                {
+                    hitObject.gameObject.SetActive(false);
+                    BlueCard = true;
+                }
+                break;
+
+            case "GreenCard":
+                interactObj.Hover();
+                if (Input.GetKeyDown(KeyCode.E))
+                {
+                    hitObject.gameObject.SetActive(false);
+                    GreenCard = true;   
+                }
+                break;
+
+            case "StartIncursion":
+                if (DialogueManager.conversationEnd)
+                {
+                    interactObj.Hover();
+                    if (Input.GetKeyDown(KeyCode.E))
+                    {
+                        SceneManager.LoadScene("Hangar");
+                    }
+                }
+                break;
+
+            case "RedDoor":case "GreenDoor":case "BlueDoor":
+                OpenDoor(tag);
+                break;
+
+            default:
+                interactObj.Hover();
+                if (Input.GetKeyDown(KeyCode.E))
+                {
+                    isExamining = true;
+                    examinedObject = hitInfo.transform;
+                    originalPositions[examinedObject] = examinedObject.position;
+                    originalRotations[examinedObject] = examinedObject.rotation;
+                }
+                break;
+
         }
     }
     //=============================================================================== 
@@ -205,6 +250,32 @@ public class Interaction : MonoBehaviour
                 Quaternion.AngleAxis(XaxisRotation * rotationSensitivity, transform.up) *
                 Quaternion.AngleAxis(YaxisRotation * rotationSensitivity, transform.right) *
                 examinedObject.rotation;
+        }
+    }
+    void OpenDoor(string DoorColor)
+    {
+        switch (DoorColor)
+        {
+            case "RedDoor":
+                if (RedCard)
+                {
+
+                }
+                break;
+            case "BlueDoor":
+                if (BlueCard)
+                {
+
+                }
+                break;
+            case "GreenDoor":
+                if (GreenCard)
+                {
+
+                }
+                break;
+            default:
+                break;
         }
     }
 

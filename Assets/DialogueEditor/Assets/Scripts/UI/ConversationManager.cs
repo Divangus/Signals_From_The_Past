@@ -535,9 +535,9 @@ namespace DialogueEditor
             // Play the audio
             if (speech.Audio != null)
             {
-                AudioPlayer.clip = speech.Audio;
-                AudioPlayer.volume = speech.Volume;
-                AudioPlayer.Play();
+               AudioPlayer.clip = speech.Audio;
+               AudioPlayer.volume = speech.Volume;
+               AudioPlayer.Play();
             }
 
             if (ScrollText)
