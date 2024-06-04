@@ -174,27 +174,15 @@ public class Interaction : MonoBehaviour
 
     void RotateObject()
     {
-        if (Input.GetKey(KeyCode.R))//hold R key to rotate, change this to whatever key you want
-        {
-            canDrop = false; //make sure throwing can't occur during rotating
 
-            //disable player being able to look around
-            //mouseLookScript.verticalSensitivity = 0f;
-            //mouseLookScript.lateralSensitivity = 0f;
-            
-
-            float XaxisRotation = Input.GetAxis("Mouse X") * rotationSensitivity;
-            float YaxisRotation = Input.GetAxis("Mouse Y") * rotationSensitivity;
-            //rotate the object depending on mouse X-Y Axis
-            examinedObject.transform.Rotate(Vector3.down, XaxisRotation);
-            examinedObject.transform.Rotate(Vector3.right, YaxisRotation);
-        }
-        else
+        float XaxisRotation = -Input.GetAxis("Mouse X");
+        float YaxisRotation = Input.GetAxis("Mouse Y");
+        if (Input.GetMouseButton(1))
         {
-            //re-enable player being able to look around
-            //mouseLookScript.verticalSensitivity = originalvalue;
-            //mouseLookScript.lateralSensitivity = originalvalue;
-            canDrop = true;
+            examinedObject.rotation =
+                Quaternion.AngleAxis(XaxisRotation * rotationSensitivity, transform.up) *
+                Quaternion.AngleAxis(YaxisRotation * rotationSensitivity, transform.right) *
+                examinedObject.rotation;
         }
     }
 
