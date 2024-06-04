@@ -47,7 +47,7 @@ public class Interaction : MonoBehaviour
 
     // Update is called once per frame
     //=============================================================================== 
-    //MADE BY: ALEX'S MOM FUCKER A.K.A. GERARD
+    // MADE BY: ALEX'S MOM FUCKER A.K.A. GERARD
     //=============================================================================== 
     void Update()
     {
