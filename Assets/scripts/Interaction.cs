@@ -41,12 +41,16 @@ public class Interaction : MonoBehaviour
 
     RaycastHit hitInfo;
 
-    private bool RedCard,BlueCard,GreenCard = false;
+    private bool RedCard, BlueCard = false;
+
+    GameObject[] BlueDoors, RedDoors;
 
     // Start is called before the first frame update
     void Start()
     {
         pointer = GameObject.Find("Pointer");
+        RedDoors = GameObject.FindGameObjectsWithTag("RedDoor");
+        BlueDoors = GameObject.FindGameObjectsWithTag("BlueDoor");
     }
 
     // Update is called once per frame
@@ -82,7 +86,24 @@ public class Interaction : MonoBehaviour
     {
         if (objectPreviouslyHit != null && objectPreviouslyHit.TryGetComponent(out IInteractable interactObj))
         {
-            interactObj.NoHover();
+            if(objectPreviouslyHit.CompareTag("RedDoor"))
+            {
+                foreach(var door in RedDoors)
+                {
+                    door.GetComponent<IInteractable>().NoHover();
+                }
+            }
+            else if (objectPreviouslyHit.CompareTag("BlueDoor"))
+            {
+                foreach (var door in BlueDoors)
+                {
+                    door.GetComponent<IInteractable>().NoHover();
+                }
+            }
+            else
+            {
+                interactObj.NoHover();
+            }
         }
     }
 
@@ -145,15 +166,6 @@ public class Interaction : MonoBehaviour
                 }
                 break;
 
-            case "GreenCard":
-                interactObj.Hover();
-                if (Input.GetKeyDown(KeyCode.E))
-                {
-                    hitObject.gameObject.SetActive(false);
-                    GreenCard = true;   
-                }
-                break;
-
             case "StartIncursion":
                 if (DialogueManager.conversationEnd)
                 {
@@ -165,7 +177,7 @@ public class Interaction : MonoBehaviour
                 }
                 break;
 
-            case "RedDoor":case "GreenDoor":case "BlueDoor":
+            case "RedDoor": case "BlueDoor":
                 OpenDoor(tag);
                 break;
 
@@ -213,7 +225,7 @@ public class Interaction : MonoBehaviour
             examinedObject.position = Vector3.Lerp(examinedObject.position, offset.transform.position, 0.2f);
 
             //make sure object doesnt collide with player, it can cause weird bugs
-            //Physics.IgnoreCollision(examinedObject.GetComponent<Collider>(), player.GetComponent<Collider>(), true);
+            Physics.IgnoreCollision(examinedObject.GetComponent<Collider>(), player.GetComponent<Collider>(), true);
 
             RotateObject();
             lastMousePosition = Input.mousePosition;
@@ -225,7 +237,7 @@ public class Interaction : MonoBehaviour
         if (examinedObject != null)
         {
             //re-enable collision with player
-            //Physics.IgnoreCollision(examinedObject.GetComponent<Collider>(), player.GetComponent<Collider>(), false);
+            Physics.IgnoreCollision(examinedObject.GetComponent<Collider>(), player.GetComponent<Collider>(), false);
 
             // Reset the position and rotation of the examined object to its original values
             if (originalPositions.ContainsKey(examinedObject))
@@ -257,21 +269,41 @@ public class Interaction : MonoBehaviour
         switch (DoorColor)
         {
             case "RedDoor":
-                if (RedCard)
+                foreach (var door in RedDoors)
                 {
+                    door.GetComponent<IInteractable>().Hover();
+                }
 
+                if (Input.GetKeyDown(KeyCode.E))
+                {
+                    if (RedCard)
+                    {
+                        //Open door
+                        GameObject.Find("RedDoors").GetComponent<Animator>().SetTrigger("ToggleDoors");
+                    }
+                    else
+                    {
+                        //Play locked audio
+                    }                    
                 }
                 break;
             case "BlueDoor":
-                if (BlueCard)
+                foreach (var door in BlueDoors)
                 {
-
+                    door.GetComponent<IInteractable>().Hover();
                 }
-                break;
-            case "GreenDoor":
-                if (GreenCard)
-                {
 
+                if (Input.GetKeyDown(KeyCode.E))
+                {
+                    if (BlueCard)
+                    {
+                        //Open door
+                        GameObject.Find("BlueDoors").GetComponent<Animator>().SetTrigger("ToggleDoors");
+                    }
+                    else
+                    {
+                        //Play locked audio
+                    }
                 }
                 break;
             default:
