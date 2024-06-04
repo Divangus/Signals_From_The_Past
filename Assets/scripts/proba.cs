@@ -5,8 +5,15 @@ using UnityEngine.UI;
 
 public class proba : MonoBehaviour, IInteractable
 {
-    public Text textTuto;
-   public void NoHover()
+    Text textTuto;
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        textTuto = GameObject.Find("InteractText").GetComponent<Text>();
+    }
+
+    public void NoHover()
     {
         gameObject.GetComponent<Outline>().enabled = false;
         textTuto.enabled = false;
