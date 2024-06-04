@@ -99,7 +99,7 @@ public class Outline : MonoBehaviour {
     needsUpdate = true;
   }
 
-  void OnEnable() {
+  public void OnEnable() {
     foreach (var renderer in renderers) {
 
       // Append outline shaders
@@ -137,7 +137,7 @@ public class Outline : MonoBehaviour {
     }
   }
 
-  void OnDisable() {
+  public void OnDisable() {
     foreach (var renderer in renderers) {
 
       // Remove outline shaders

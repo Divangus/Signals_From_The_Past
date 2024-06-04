@@ -11,11 +11,12 @@ public class proba : MonoBehaviour, IInteractable
     void Start()
     {
         textTuto = GameObject.Find("InteractText").GetComponent<Text>();
+        gameObject.GetComponent<Outline>().OnDisable();
     }
 
     public void NoHover()
     {
-        gameObject.GetComponent<Outline>().enabled = false;
+        gameObject.GetComponent<Outline>().OnDisable();
         textTuto.enabled = false;
     }
 
@@ -25,9 +26,8 @@ public class proba : MonoBehaviour, IInteractable
         {
             textTuto.enabled = true;
         }
-        gameObject.GetComponent<Outline>().enabled = true;
+        gameObject.GetComponent<Outline>().OnEnable();
         gameObject.GetComponent<Outline>().OutlineMode = Outline.Mode.OutlineVisible;
-        gameObject.GetComponent<Outline>().OutlineColor = Color.yellow;
         gameObject.GetComponent<Outline>().OutlineWidth = 5;
     }
 }
