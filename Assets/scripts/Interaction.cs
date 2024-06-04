@@ -26,8 +26,6 @@ public class Interaction : MonoBehaviour
 
     public static bool isExamining = false;
 
-    bool canDrop = true;
-
     private Vector3 lastMousePosition;
 
     private Transform examinedObject; // Store the currently examined object
@@ -36,106 +34,131 @@ public class Interaction : MonoBehaviour
     private Dictionary<Transform, Vector3> originalPositions = new Dictionary<Transform, Vector3>();
     private Dictionary<Transform, Quaternion> originalRotations = new Dictionary<Transform, Quaternion>();
 
+    private GameObject pointer;
+
     RaycastHit hitInfo;
 
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        pointer = GameObject.Find("Pointer");
     }
 
     // Update is called once per frame
+    //=============================================================================== 
+    //MADE BY: ALEX'S MOM FUCKER A.K.A. GERARD
+    //=============================================================================== 
     void Update()
     {
-        if (objectPreviouslyHit != null)
+        HandlePreviousHitObject();        
+
+        if (!isExamining)
         {
-            if(objectPreviouslyHit.TryGetComponent(out IInteractable interactObj))
-            {
-                interactObj.NoHover();
-            }
+            HandleRaycast();
         }
-        Ray r = new Ray(InteractorSource.position, InteractorSource.forward);
-
-        if (Physics.Raycast(r, out hitInfo, InteractRange))
+        else
         {
-            if (objectPreviouslyHit != hitInfo.collider.gameObject || objectPreviouslyHit == null)
-            {
-                objectPreviouslyHit = hitInfo.collider.gameObject;
-            }
-
-            if (hitInfo.collider.gameObject.TryGetComponent(out IInteractable interactObj))
-            {
-                if (hitInfo.collider.gameObject.CompareTag("StartIncursion"))
-                {
-                    if (DialogueManager.conversationEnd)
-                    {
-                        interactObj.Hover();
-                    }
-                }
-                else
-                {
-                    interactObj.Hover();
-                }
-
-                if (Input.GetKeyDown(KeyCode.E))
-                {
-                    if (hitInfo.collider.gameObject.CompareTag("StartIncursion"))
-                    {
-                        if (DialogueManager.conversationEnd)
-                        {
-                            Debug.Log("DEIVID");
-                        }
-                    }
-                    else
-                    {
-                        ToggleExamination();
-
-                        if (isExamining)
-                        {
-                            examinedObject = hitInfo.transform;
-                            originalPositions[examinedObject] = examinedObject.position;
-                            originalRotations[examinedObject] = examinedObject.rotation;
-                        }
-                    }
-
-                }
-            }
-
+            HandleExaminationInput();
         }
 
         if (isExamining)
         {
-            Examine(); StartExamination();
-            //if (Input.GetKeyDown(KeyCode.E)) { ToggleExamination(); }
-
+            StartExamination();
+            Examine();
+            
         }
         else
         {
-            NonExamine(); StopExamination();
+            StopExamination();
+            NonExamine();
+        }
+
+        
+    }
+
+    void HandlePreviousHitObject()
+    {
+        if (objectPreviouslyHit != null && objectPreviouslyHit.TryGetComponent(out IInteractable interactObj))
+        {
+            interactObj.NoHover();
         }
     }
 
+    void HandleExaminationInput()
+    {
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            isExamining = false;
+        }
+    }
+
+    void HandleRaycast()
+    {
+        Ray r = new Ray(InteractorSource.position, InteractorSource.forward);
+
+        if (Physics.Raycast(r, out hitInfo, InteractRange))
+        {
+            GameObject hitObject = hitInfo.collider.gameObject;
+
+            if (objectPreviouslyHit != hitObject || objectPreviouslyHit == null)
+            {
+                objectPreviouslyHit = hitObject;
+            }
+
+            if (hitObject.TryGetComponent(out IInteractable interactObj))
+            {
+                HandleInteraction(interactObj, hitObject);
+            }
+        }
+    }
+
+    void HandleInteraction(IInteractable interactObj, GameObject hitObject)
+    {
+        if (hitObject.CompareTag("StartIncursion"))
+        {
+            if (DialogueManager.conversationEnd)
+            {
+                interactObj.Hover();
+                if (Input.GetKeyDown(KeyCode.E))
+                {
+                    Debug.Log("david mariquita");
+                }
+            }
+        }
+        else
+        {
+            interactObj.Hover();
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                isExamining = true;
+                examinedObject = hitInfo.transform;
+                originalPositions[examinedObject] = examinedObject.position;
+                originalRotations[examinedObject] = examinedObject.rotation;
+            }
+        }
+    }
+    //=============================================================================== 
 
     public void ToggleExamination()
     {
         isExamining = !isExamining;
-
     }
 
     void StartExamination()
     {
-
         lastMousePosition = Input.mousePosition;
-        //Cursor.lockState = CursorLockMode.None;
-        //Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+        pointer.SetActive(false);
         InputLock = true;
     }
 
     void StopExamination()
     {
-        //Cursor.lockState = CursorLockMode.Locked;
-        //Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+        pointer.SetActive(true);
         InputLock = false;
     }
 
