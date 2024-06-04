@@ -169,7 +169,7 @@ public class Interaction : MonoBehaviour
             examinedObject.position = Vector3.Lerp(examinedObject.position, offset.transform.position, 0.2f);
 
             //make sure object doesnt collide with player, it can cause weird bugs
-            Physics.IgnoreCollision(examinedObject.GetComponent<Collider>(), player.GetComponent<Collider>(), true);
+            //Physics.IgnoreCollision(examinedObject.GetComponent<Collider>(), player.GetComponent<Collider>(), true);
 
             RotateObject();
             lastMousePosition = Input.mousePosition;
@@ -181,7 +181,7 @@ public class Interaction : MonoBehaviour
         if (examinedObject != null)
         {
             //re-enable collision with player
-            Physics.IgnoreCollision(examinedObject.GetComponent<Collider>(), player.GetComponent<Collider>(), false);
+            //Physics.IgnoreCollision(examinedObject.GetComponent<Collider>(), player.GetComponent<Collider>(), false);
 
             // Reset the position and rotation of the examined object to its original values
             if (originalPositions.ContainsKey(examinedObject))

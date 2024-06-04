@@ -23,9 +23,4 @@ public class proba : MonoBehaviour, IInteractable
         gameObject.GetComponent<Outline>().OutlineColor = Color.yellow;
         gameObject.GetComponent<Outline>().OutlineWidth = 5;
     }
-
-    void Update()
-    {
-        
-    }
 }
