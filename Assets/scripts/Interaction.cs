@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEditor.SceneManagement;
 using Cursor = UnityEngine.Cursor;
+using UnityEngine.SceneManagement;
 
 interface IInteractable
 {
@@ -46,9 +48,6 @@ public class Interaction : MonoBehaviour
     }
 
     // Update is called once per frame
-    //=============================================================================== 
-    // MADE BY: ALEX'S MOM FUCKER A.K.A. GERARD
-    //=============================================================================== 
     void Update()
     {
         HandlePreviousHitObject();        
@@ -122,7 +121,7 @@ public class Interaction : MonoBehaviour
                 interactObj.Hover();
                 if (Input.GetKeyDown(KeyCode.E))
                 {
-                    Debug.Log("david mariquita");
+                    SceneManager.LoadScene("Hangar");
                 }
             }
         }
