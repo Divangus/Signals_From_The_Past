@@ -6,9 +6,11 @@ TagManager:
   tags:
   - Tuto
   - StartIncursion
-  - Card
   - RedDoor
   - BlueDoor
+  - RedCard
+  - GreenCard
+  - BlueCard
   layers:
   - Default
   - TransparentFX

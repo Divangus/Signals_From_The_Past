@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEditor.SceneManagement;
 using Cursor = UnityEngine.Cursor;
 using UnityEngine.SceneManagement;
 using System;
@@ -21,6 +20,11 @@ public class Interaction : MonoBehaviour
     public static bool InputLock = false;
     public Transform InteractorSource;
     public float InteractRange;
+
+    public AudioSource DoorSource;
+    public AudioClip[] audiosDoor;
+
+    public GameObject[] TargetUI;
 
     public float rotationSensitivity = 2.0f;
 
@@ -154,6 +158,7 @@ public class Interaction : MonoBehaviour
                 {
                     hitObject.gameObject.SetActive(false);
                     RedCard = true;
+                    TargetUI[0].SetActive(true);
                 }
                 break;
 
@@ -163,6 +168,16 @@ public class Interaction : MonoBehaviour
                 {
                     hitObject.gameObject.SetActive(false);
                     BlueCard = true;
+                    TargetUI[1].SetActive(true);
+                }
+                break;
+
+            case "GreenCard":
+                interactObj.Hover();
+                if (Input.GetKeyDown(KeyCode.E))
+                {
+                    hitObject.gameObject.SetActive(false);
+                    TargetUI[2].SetActive(true);
                 }
                 break;
 
@@ -280,10 +295,14 @@ public class Interaction : MonoBehaviour
                     {
                         //Open door
                         GameObject.Find("RedDoors").GetComponent<Animator>().SetTrigger("ToggleDoors");
+                        DoorSource.clip = audiosDoor[0];
+                        DoorSource.Play();  
                     }
                     else
                     {
                         //Play locked audio
+                        DoorSource.clip = audiosDoor[1];
+                        DoorSource.Play();
                     }                    
                 }
                 break;
@@ -299,10 +318,15 @@ public class Interaction : MonoBehaviour
                     {
                         //Open door
                         GameObject.Find("BlueDoors").GetComponent<Animator>().SetTrigger("ToggleDoors");
+                        DoorSource.clip = audiosDoor[0];
+                        DoorSource.Play();
+
                     }
                     else
                     {
                         //Play locked audio
+                        DoorSource.clip = audiosDoor[1];
+                        DoorSource.Play();
                     }
                 }
                 break;

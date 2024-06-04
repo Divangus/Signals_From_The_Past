@@ -4665,6 +4665,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 61704826169981206, guid: e0b456b7c3919c540bdaa7f0dad1d57d, type: 3}
+      propertyPath: speed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 61704826169981206, guid: e0b456b7c3919c540bdaa7f0dad1d57d, type: 3}
+      propertyPath: runSpeed
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 91509785958209674, guid: e0b456b7c3919c540bdaa7f0dad1d57d, type: 3}
       propertyPath: m_Name
       value: First Person Controller Definitiu
