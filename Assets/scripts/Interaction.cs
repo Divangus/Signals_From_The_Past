@@ -135,15 +135,8 @@ public class Interaction : MonoBehaviour
             if (hitObject.TryGetComponent(out IInteractable interactObj))
             {
                 HandleInteraction(interactObj, hitObject);
-                CheckCard(interactObj, hitObject);
             }
         }
-    }
-
-    private void CheckCard(IInteractable interactObj, GameObject hitObject)
-    {
-
-       
     }
 
     void HandleInteraction(IInteractable interactObj, GameObject hitObject)
@@ -190,6 +183,14 @@ public class Interaction : MonoBehaviour
                         SceneManager.LoadScene("Hangar");
                     }
                 }
+                break;
+
+            case "Radio":
+                    interactObj.Hover();
+                    if (Input.GetKeyDown(KeyCode.E))
+                    {
+                    hitObject.GetComponent<DialogueHangar>().StartConversation();
+                    }
                 break;
 
             case "RedDoor": case "BlueDoor":
