@@ -180,7 +180,9 @@ public class Interaction : MonoBehaviour
                     interactObj.Hover();
                     if (Input.GetKeyDown(KeyCode.E))
                     {
-                        SceneManager.LoadScene("Hangar");
+                        pointer.SetActive(false);
+                        InputLock = true;
+                        GameObject.Find("Animation").GetComponent<Animator>().enabled = true;
                     }
                 }
                 break;
